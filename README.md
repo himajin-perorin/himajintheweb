@@ -1,2 +1,1 @@
-# himajintheidler.github.io
-my blog
+# 暇人のブログ
