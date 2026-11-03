@@ -39,6 +39,13 @@
 <center>
  <h1 style="font-size: 48px;">日々のうんたらかんたら by 暇人</h1>
  暇人です。色々やってます
+ <p id="secret-link" hidden><a href="0427.html">☆重要なお知らせ☆</a></p>
+<script>
+  const appearanceChance = 0.05;
+  if (Math.random() < appearanceChance) {
+    document.getElementById("secret-link").hidden = false;
+  }
+</script>
  <p style="color: #808080; font-size: 12px;">SNS一覧：</p>
 <a href="https://discord.com/invite/t6BZCVtS9X" target="_blank" rel="noopener noreferrer">
   <img src="sample/Discord-Symbol-Blurple.png" alt="My Discord Server" width="40">
