@@ -1,5 +1,41 @@
 <!DOCTYPE html>
-<title>暇人のブログ</title>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>固定記事</title>
+<style>
+  body {
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: url("sample/repeat_himajin.png");
+    background-repeat: space;
+    background-size: 25px 25px;
+    opacity: 0.1;
+    pointer-events: none;
+  }
+</style>
+</head>
+<style>
+  @font-face {
+    font-family:"PC9800Font";
+    src: url("sample/pc-9800.ttf") format("truetype");
+    font-display: swap;
+  }
+
+  body {
+    font-family: "PC9800Font", sans-serif;
+  }
+</style>
+<body>
 <center>
 <h1 style="font-size: 48px;">初自作ブログなので色々綴ります</h1>
 <br><br><br>
@@ -17,15 +53,35 @@
 <br>
 <p>16歳の高校一年生。低身長デブのナードです。絵描いたり作曲したりします、海外コンテンツやらアニメやらゲームやらが好きです</p>
 <br><br>
-<p>今、自分はVisual Codeから文字をポチポチ打って、リポジトリを一々更新しながらこの記事を書いてる訳ですが...</p>
+<p>今、自分はVisual Studio Codeから文字をポチポチ打って、リポジトリを一々更新しながらこの記事を書いてる訳ですが...</p>
 <br><br><br><br>
  <p>はっきり言ってこの作業面倒くさいね（笑）</p>
 <br>
 <p>こう書くと「じゃあなんでバカ面倒くさい方法で一々記事なんか書いてんだよボケマラ」とかいう罵倒が飛んできそう（自虐）ですが、理由はあります。</p>
 <br><br>
-<p>単純に自分のブログを持つということに憧れてたから、ってのはありますね</p>
-<p>確かに今の時代、「Note」やら「はてなブログ」やら、自分でコード組んだりしなくても気軽に記事を投稿できるサイトはある訳ですが、</p>
- <p>それでも自分は、「自分の手で」「コードを書いて」「自分のブログを作る」っていう事に対してすごーく憧れを持ってました（普通にかっこよくない？）</p>
+<p>単純に自分の手でブログを書くことに以前から興味があって、それをやりたかっただけです。</p>
+<p>確かに今の時代、「Note」や「はてなブログ」とかみたいなサービスで自分でHTMLとか弄らなくてもブログを作れちゃったりするわけですけど、</p>
+<p>それでも自分は「自分自身で色々コード組んで、思うがままにカスタムできる」</p>
+<p>という自作ブログにしか出来ないことがあったので今こうやってポチポチとこっから文章を打ってます。</p>
+<p style="color: #808080; font-size: 12px;">追記：リポジトリを一々更新してるって言ったけどVS Codeからプレビューを確認できることを知ったのでその必要はなくなりました。やったぜ</p>
+<br><br><br>
+<p>んじゃ...次は自分と海外コンテンツとかの話でもしましょうかね</p>
+<br><br><br>
+<p>この話題入って早速断言しておきますが、自分の人生は<strong>海外コンテンツ無しだったら全く違うものになってたと</strong>思います。マジで。</p>
+<br>
+<p><strong>「いつから触れていたか？」</strong></p>
+<br>
+<p>というのは自分が覚えている限り、2, 3歳ごろぐらいからで、親のタブレットでMUGENの動画とかを観たりしていた記憶があります。</p>
+<p>幼稚園に入ってからはしょっちゅう、マリオのFlashアニメーションとか、無断転載されていたマリオの子供向け番組とかを観てました。</p>
+<p>（まあ内容はお世辞にも健全なものとは言えないけど）</p>
+<p>例えば、マリオの頭が吹っ飛ぶようなグロアニメだったり、<a href="https://youtu.be/u1JR__rPGOo?si=RLL_j0lP_9MBNJA1" target="_blank">マリオが薬物をやって大変なコトになるやつだったり</a>、</p>
+<p>そして、父の祖母宅にあったパソコンとかで<a href="https://youtu.be/wFJRbPoOun0?si=nRk0ihXmdLGa2KEQ" target="_blank">マリオが銃で敵を撃ち殺すゲーム</a>とかやってました。</p>
+<p>幼少期からネット漬けすぎるな...</p>
+<br>
+<p>因みに、グロいマリオ以外だと、母の実家に預けられている時によくトムとジェリーやミッキーマウス、ルーニー・テューンズなどのカートゥーンを観ていました。</p>
 <br><br>
-<p>自作ブログって聞くと難しいって思うかもしれないけど、素人でもネットで調べれば大体素人でもできる</p>
-<p>自分の場合はGithubでリポジトリ（プログラムの保管場所みたいなの）を作り、そこからhtml形式で文章を書いています。</p>
+<p>小学生ぐらいになってからハマったものは、Youtubeのオリジナルアニメーションシリーズとか、ゲームとかが圧倒的に多かったです。</p>
+<p>一部を上げるとするならば、Alan Becker氏により作られている<a href="https://www.youtube.com/show/VLPL7z8SQeih5AfL0gwMqD80TwO79TvosRHR?sbp=KgtRYjFWdlVmMjFMNEAB" target="_blank">「Animator VS Animation」シリーズ</a>、</p>
+<p>Tomska氏による<a href="https://www.youtube.com/playlist?list=PL3A5849BDE0581B19" target="_blank">「ASDFMOVIE」シリーズ</a>、</p>
+<p>PuffballsUnited氏によって作成された<a href="https://store.steampowered.com/app/1089980/The_Henry_Stickmin_Collection/" target="_blank">「The Henry Stickmin Collection」</a>などですかね。</p>
+<p>ヘンリーはリンク先のリマスター版が出る前からよく「Fleeing the Complex」や「Escape the prison」などの実況動画を観ていました。</p>

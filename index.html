@@ -1,5 +1,41 @@
 <!DOCTYPE html>
-<title>暇人のブログ</title>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>暇人のブログ</title>
+<style>
+  body {
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: url("sample/repeat_himajin.png");
+    background-repeat: space;
+    background-size: 25px 25px;
+    opacity: 0.1;
+    pointer-events: none;
+  }
+</style>
+</head>
+<style>
+  @font-face {
+    font-family:"PC9800Font";
+    src: url("sample/pc-9800.ttf") format("truetype");
+    font-display: swap;
+  }
+
+  body {
+    font-family: "PC9800Font", sans-serif;
+  }
+</style>
+<body>
 <center>
  <h1 style="font-size: 48px;">日々のうんたらかんたら by 暇人</h1>
  暇人です。色々やってます
@@ -16,3 +52,6 @@
  <p style="color: #808080; font-size: 12px;">当サイトの記事・メディアなどをSNSなどで引用する際は、クレジットを明記してくれると幸いです。</p>
   <br>
  <h1 style="font-size: 36px;">記事一覧</h1>
+</center>
+</body>
+</html>
